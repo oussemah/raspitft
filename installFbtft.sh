@@ -3,8 +3,8 @@
 export SCRIPT_PATH=$(pwd)
 REPO_URI=https://github.com/notro/rpi-firmware rpi-update
 
-echo "fbtft_device custom name=fb_ili9341  gpios=reset:25,dc:24,led:18 speed=16000000 rotate=90 bgr=1" >> /etc/modules
-echo "$(cat /boot/cmdline.txt) fbtft_device.name=adafruit22a fbtft_device.gpios=reset:25,dc:24,led:18 fbtft_device.speed=16000000 fbtft_device.rotate=90 fbtft_device.verbose=2 fbcon=map:10,rotate:1 fbcon=font::ProFont6x11" > /boot/cmdline.txt
+echo "fbtft_device name=rpi-display  gpios=reset:25,dc:24,led:18 speed=32000000 rotate=90 bgr=1" >> /etc/modules
+echo "$(cat /boot/cmdline.txt) fbtft_device.name=rpi-display fbtft_device.gpios=reset:25,dc:24,led:18 fbtft_device.speed=32000000 fbtft_device.rotate=90 fbtft_device.verbose=2 fbcon=map:10,rotate:1 fbcon=font::ProFont6x11" > /boot/cmdline.txt
 
 con2fbmap 1 1
 echo ""
