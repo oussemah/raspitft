@@ -14,5 +14,5 @@ Some custom scripts to setup a Raspebrry Pi to work with wifi and a 2.2 QVGA TFT
 
  > In case you don't know it yet, the tft lcd module used here is the one available at http://www.aliexpress.com/store/product/2-2-inch-TFT-LCD-module-with-SPI-serial-port-ILI9341-drive-IC-240-320/224898_1292229328.html
 
- PS: I customized the settings based on adafruit module (they both have the "same" controllers ili9341 or ili9340 ), and to my custom wiring (using pwm pin for backlight and custom dc/reset pins)
+ PS: I customized the settings based on rpi-display settings because it fits more the controller of the display (more then adafriut's ili9340) and runs faster (32M instead of 16M for adafrtui's ili9340)
 
